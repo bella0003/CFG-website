@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Czech Republic Budget Travel Guide</title>
+    <link rel="stylesheet" href=./CzR.css> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgimg">
+        <div class="middle">
+          <h1>COMING SOON</h1>
+            <h1>Czech Republic Budget Travel Guide</h1>
+          <hr>
+          <p>35 days</p>
+        </div>
+    </div>
+
+<script>
+var countDownDate = new Date("Oct 5, 2020 15:37:25").getTime();
+
+var countdownfunction = setInterval(function() {
+
+  var now = new Date("25 Aug, 2020 23:11:00").getTime();
+
+  var distance = countDownDate - now;
+  
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+ 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>

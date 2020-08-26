@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Travel website Destinations Page</title>
+  <link rel="stylesheet" href=./page2.css>
+  <script src="./page2.js"></script> 
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav2">
+        <a href=./index.html>Home</a>
+        <a class=active href="#destinations">Destinations</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <script>
+        function myFunction() {
+          var elmnt = document.getElementById("contact");
+          elmnt.scrollIntoView();
+        }
+        </script>
+
+      <div class="pageTitle">
+          <h1>Destinations</h1>
+          <h3 id="subtitle">Click on the map below for travel tips!</h3>
+      </div>
+
+      <div class="europeMap">
+        <img src="./europemap.jpg" alt="Map of Europe" usemap="#europe-map">
+        <map name="europe-map">
+            <area shape="poly"
+            alt="Czech Republic" title="Czech Republic" href="./CzechRepublic.html" 
+            coords="521,646,524,656,536,670,547,678,557,670,570,672,582,673,595,670,606,665,610,657,600,647,589,645,575,645,571,636,558,631,549,631">
+        </map>
+       </div> 
+
+
+
+
+
+      <nav class="contact-form">
+        <h1>Any Questions? Feel free to contact us here!</h1>
+        <a id ="contact"></a>
+    </nav>
+
+    <nav class="footer">
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name...">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    </nav>
+
+</body>
+</html>
